@@ -33,6 +33,10 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
+    jekyll-seo-tag (2.4.0)
+      jekyll (~> 3.3)
+    jekyll-sitemap (1.1.1)
+      jekyll (~> 3.3)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
     jemoji (0.9.0)
@@ -77,6 +81,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.6.2)
   jekyll-feed
+  jekyll-seo-tag
+  jekyll-sitemap
   jemoji
   minima (~> 2.0)
   tzinfo-data
