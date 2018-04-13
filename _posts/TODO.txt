@@ -1,0 +1,11 @@
+Write about Java autoboxing of primitives,
+and how they appear to be pass-by-value.
+ - http://tpcg.io/GatUwE
+
+
+git
+ - Reflog
+ - Force push - https://developer.atlassian.com/blog/2015/04/force-with-lease/
+  - --force will overwrite the remote with no regards.
+  - --force-with-lease will only overwrite the remote if it has not changed since the last time you had pulled it.
+  - doing a git fetch will make the lease ineffective
