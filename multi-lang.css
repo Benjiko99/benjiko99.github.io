@@ -1,0 +1,17 @@
+#switch-lang {
+  float: right;
+  margin-left: 8px;
+  background: none;
+  border: 2px solid rgba(42, 122, 226, 0.3);
+  border-radius: 4px;
+  padding: 6px;
+  -webkit-transition: border-color 150ms linear;
+  -moz-transition: border-color 150ms linear;
+  -o-transition: border-color 150ms linear;
+  -ms-transition: border-color 150ms linear;
+  transition: border-color 150ms linear;
+}
+
+#switch-lang:hover {
+  border-color: rgba(42, 122, 226, 0.7);
+}

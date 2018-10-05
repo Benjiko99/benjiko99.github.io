@@ -1,6 +1,9 @@
 ---
 layout: plain
 ---
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="multi-lang.js"></script>
+<link rel="stylesheet" type="text/css" href="multi-lang.css" />
 
 <style type="text/css" media="screen">
   .container {
@@ -11,22 +14,6 @@ layout: plain
   #last-updated {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
-  }
-  #switch-lang {
-    float: right;
-    margin-left: 8px;
-    background: none;
-    border: 2px solid rgba(42, 122, 226, 0.3);
-    border-radius: 4px;
-    padding: 6px;
-    -webkit-transition: border-color 150ms linear;
-    -moz-transition: border-color 150ms linear;
-    -o-transition: border-color 150ms linear;
-    -ms-transition: border-color 150ms linear;
-    transition: border-color 150ms linear;
-  }
-  #switch-lang:hover {
-    border-color: rgba(42, 122, 226, 0.7);
   }
 </style>
 
@@ -183,48 +170,3 @@ layout: plain
     do not hesitate to contact us at <a href="mailto:spiraclestudios@gmail.com">spiraclestudios@gmail.com</a>.
   </p>
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<script type="text/javascript">
-var currentLang = "sk"
-
-$(function() {
-  setLanguage(currentLang)
-  $("#switch-lang").click(toggleLanguage)
-});
-
-function toggleLanguage() {
-  if (currentLang == "sk") {
-    setLanguage("en")
-  } else if (currentLang == "en") {
-    setLanguage("sk")
-  }
-}
-
-function setLanguage(language) {
-  console.log("Setting language: " + language)
-
-  currentLang = language
-  $(".container").attr("lang", language)
-
-  if (language == "sk") {
-    $("#switch-lang").text("Read in English")
-    findElementsByLanguage("sk").show()
-  } else {
-    findElementsByLanguage("sk").hide()
-  }
-
-  if (language == "en") {
-    $("#switch-lang").text("Čítať v Slovenčine")
-    findElementsByLanguage("en").show()
-  } else {
-    findElementsByLanguage("en").hide()
-  }
-}
-
-function findElementsByLanguage(language) {
-  return $(".container :lang(" + language + ")")
-}
-</script>
