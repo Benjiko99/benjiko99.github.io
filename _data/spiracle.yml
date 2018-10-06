@@ -1,4 +1,4 @@
-baseurl: "/spiracle_software" # the subpath of your site, e.g. /blog
+baseurl: "/spiracle" # the subpath of your site, e.g. /blog
 
 # Site settings
 title: Spiracle Software
