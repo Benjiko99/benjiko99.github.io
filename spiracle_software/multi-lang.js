@@ -1,4 +1,4 @@
-var currentLang = "sk"
+var currentLang = $(":root").attr("lang")
 
 $(function() {
   setLanguage(currentLang)
@@ -17,7 +17,7 @@ function setLanguage(language) {
   console.log("Setting language: " + language)
 
   currentLang = language
-  $(".container").attr("lang", language)
+  $(".container, footer").attr("lang", language)
 
   if (language == "sk") {
     $("#switch-lang").text("Read in English")
@@ -35,5 +35,6 @@ function setLanguage(language) {
 }
 
 function findElementsByLanguage(language) {
-  return $(".container :lang(" + language + ")")
+  return $(".container :lang(" + language + "), " +
+           "footer :lang(" + language + ")")
 }

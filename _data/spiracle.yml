@@ -1,0 +1,10 @@
+baseurl: "/spiracle_software" # the subpath of your site, e.g. /blog
+
+# Site settings
+title: Spiracle Software
+author: Tomáš Beňo
+email: spiraclestudios@gmail.com
+
+header_pages:
+  - title: Blog
+    url: /
