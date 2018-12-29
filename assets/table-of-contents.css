@@ -1,0 +1,17 @@
+.toc {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+}
+
+.toc-title {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.toc ol {
+  margin-bottom: 0;
+  font-size: 15px;
+}
