@@ -9,3 +9,12 @@ git
   - --force will overwrite the remote with no regards.
   - --force-with-lease will only overwrite the remote if it has not changed since the last time you had pulled it.
   - doing a git fetch will make the lease ineffective
+
+
+android
+  - android:fillViewport="true"
+    - forces the ScrollView's child to fill it
+    - so you should be fine with match_parent width and height on your ScrollView
+      without fillViewport
+  - Language switcher
+    - that one medium post has lots of mistakes in it, and we could make a more complete solution
