@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Git Cookbook
+title: Git
 permalink: /git/
 ---
 ### Guides

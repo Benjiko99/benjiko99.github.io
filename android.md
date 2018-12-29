@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Android Cookbook
+title: Android
 permalink: /android/
 ---
 ### Guides
