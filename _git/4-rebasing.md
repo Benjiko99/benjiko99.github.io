@@ -3,11 +3,12 @@ layout: page
 title:  Rebasing
 description: Manipulating commit history.
 ---
+
 [Official Documentation](https://git-scm.com/docs/git-rebase), [Further Reading](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 
 *// TODO What is a rebasing and when to use it*
 
-### Interactive Rebase
+## Interactive Rebase
 The interactive mode lets you chose what you want to do with each commit.
 
 ```
@@ -36,7 +37,7 @@ When you enter a **Interactive Rebase**, git displays what commands are at your 
 # However, if you remove everything, the rebase will be aborted.
 ```
 
-### Getting out of a Bad Rebase
+## Getting out of a Bad Rebase
 If you're currently in the middle of a rebase and would like to abort it, you can do so with this command:
 ```
 $ git rebase --abort
@@ -45,7 +46,7 @@ The rebase will be aborted and the repository will be reset to the state it was 
 
 If you've already finished the rebase and then realised you'd like to revert it, you can do so via [git reflog](/git/reflog).
 
-### Useful Aliases
+## Useful Aliases
 You can learn more about [Aliases here](/git/aliases).
 
 ```

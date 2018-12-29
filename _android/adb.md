@@ -3,7 +3,8 @@ layout: page
 title:  ADB
 description: Android Debug Bridge
 ---
-# Simulating the system killing your process
+
+## Simulating the system killing your process
 You should test whether your application restarts properly if killed by the system,
 either when it runs out of memory or the phone gets restarted by the user.
 

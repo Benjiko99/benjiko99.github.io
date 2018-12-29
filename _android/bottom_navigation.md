@@ -326,8 +326,6 @@ fun AppCompatActivity.propagateOnBackPressedToNavHostFragment(@IdRes navHostFrag
 }
 ```
 
----
-
 ### Usage Example
 
 #### HubFragment.kt

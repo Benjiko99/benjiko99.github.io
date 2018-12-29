@@ -3,7 +3,8 @@ layout: page
 title:  Intro
 description: Desktop clients; Videos, Books
 ---
-# Desktop Clients
+
+## Desktop Clients
 There are two prominent choices for a Git desktop client:
 [GitHub Desktop](https://desktop.github.com/) and [Sourcetree](https://www.sourcetreeapp.com/);
 
@@ -21,7 +22,7 @@ There are two prominent choices for a Git desktop client:
 If you're a beginner, go with [Sourcetree](https://www.sourcetreeapp.com/) as you'll have an easier time using it at work,  
 but perhaps install [GitHub Desktop](https://desktop.github.com/) as well and give it a try at home.
 
-# Videos, Books
+## Videos, Books
 + [Pro Git book](https://git-scm.com/book/en/v2) [Free]  
   This book teaches you how to use Git like a pro.
 

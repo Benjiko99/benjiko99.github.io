@@ -3,6 +3,7 @@ layout: page
 title:  Conflict Resolution
 description: Resolving merge conflicts.
 ---
+
 The way you resolve conflicts differs based on whether you're doing a merge or a rebase.
 
 **When Merging:**
@@ -13,14 +14,14 @@ The way you resolve conflicts differs based on whether you're doing a merge or a
 - you're resolving conflicts one-by-one
 - you may end up rewriting history
 
-### Merge conflicts
+## Merge conflicts
 [Official Documentation](https://git-scm.com/docs/git-merge#_how_conflicts_are_presented)
 
 Merging will create a new commit, in which you will make the changes necessary
 to get the branch into the desired state. This new commit (called a **Merge commit**)
 acts as a sort of _glue_ between the two versions of the code.
 
-### Rebase conflicts
+## Rebase conflicts
 [Official Documentation](https://git-scm.com/docs/git-rebase)
 
 In case of conflict, git rebase will stop at the first problematic commit.
