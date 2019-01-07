@@ -4,6 +4,26 @@ layout: default
 
 <div class="home">
 
+    <h1 class="page-heading">Pages</h1>
+
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+    {%- if page_paths -%}
+      <ul class="post-list">
+        <li>
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+            <h2 style="margin-bottom: 0;">
+              <a class="post-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </h2>
+            {%- endif -%}
+          {%- endfor -%}
+        </li>
+      </ul>
+    {%- endif -%}
+
   <h1 class="page-heading">Posts</h1>
   
   {{ content }}
