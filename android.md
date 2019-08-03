@@ -9,8 +9,10 @@ permalink: /android/
 
 {% for page in site.android %}
   <li>
-    <span style="font-size: 18px;"><a href="{{ page.url }}">{{ page.title }}</a> - </span>
-    <span>{{ page.description }}</span>
+    <span style="font-size: 18px;"><a href="{{ page.url }}">{{ page.title }}</a></span>
+    {% if page.description %}
+      <span> - {{ page.description }}</span>
+    {% endif %}
   </li>
 {% endfor %}
 

@@ -8,8 +8,10 @@ permalink: /git/
 
 {% for page in site.git %}
   <li>
-    <span style="font-size: 18px;"><a href="{{ page.url }}">{{ page.title }}</a> - </span>
-    <span>{{ page.description }}</span>
+    <span style="font-size: 18px;"><a href="{{ page.url }}">{{ page.title }}</a></span>
+    {% if page.description %}
+      <span> - {{ page.description }}</span>
+    {% endif %}
   </li>
 {% endfor %}
 
