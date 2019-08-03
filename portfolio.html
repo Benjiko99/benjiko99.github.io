@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+</style>
+
+<div class="container">
+  <h1>Portfolio</h1>
+
+  
+
+  <p>Learn more about me:</p>
+
+  <ul class="social-media-list">
+    <li>
+      <a href="https://www.dropbox.com/s/1lyvwxyrcitj283/Resume%20-%20Tom%C3%A1%C5%A1%20Be%C5%88o.pdf?dl=0">
+        <span class="icon icon--github" style="visibility: hidden">{% include icon-github.svg %}</span>
+        <span class="username">Resume [PDF]</span>
+      </a>
+    </li>
+    {% if site.github_username %}
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </li>
+    {% endif %}
+
+    {% if site.linkedin_username %}
+    <li>
+      {% include icon-linkedin.html username=site.linkedin_username %}
+    </li>
+    {% endif %}
+  </ul>
+</div>
