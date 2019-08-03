@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-    <h1 class="page-heading">Pages</h1>
+    <h1 class="page-heading">Topics</h1>
 
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -24,7 +24,7 @@ layout: default
       </ul>
     {%- endif -%}
 
-  <h1 class="page-heading">Featured Guides</h1>
+  <!-- <h1 class="page-heading">Featured Guides</h1>
   <p>Guides that are worth highlighting for being the most feature complete or well written.</p>
   <ul>
   
@@ -37,9 +37,9 @@ layout: default
     {% endif %}
   {% endfor %}
   
-  </ul>
+  </ul> -->
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- <h1 class="page-heading">Posts</h1>
   
   {{ content }}
 
@@ -56,6 +56,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 
 </div>

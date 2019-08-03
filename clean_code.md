@@ -3,7 +3,6 @@ layout: page
 title: Clean Code
 permalink: /clean_code/
 ---
-### Guides
 <ul>
 
 {% for page in site.clean_code %}
