@@ -38,6 +38,8 @@ collections:
     output: true
   clean_code:
     output: true
+  references:
+    output: true
 
 # Build settings
 markdown: kramdown
