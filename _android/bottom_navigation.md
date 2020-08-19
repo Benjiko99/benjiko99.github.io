@@ -10,6 +10,7 @@ We will also be implementing **fragment management** for our destinations.
 
 ### Dependencies
 We'll be using AndroidX and the Material Design library.
+
 ```gradle
 implementation "androidx.appcompat:appcompat:1.0.0"
 implementation "com.google.android.material:material:1.0.0-rc01"

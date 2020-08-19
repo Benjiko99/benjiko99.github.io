@@ -53,3 +53,40 @@ You can learn more about [Aliases here](/git/aliases).
 $ git config --global alias.cont 'rebase --continue'
 $ git config --global alias.abort 'rebase --abort'
 ```
+
+## Replacing/Swapping Commits
+With interactive rebase, you can use the `pick` command to replace commits deep in the history.
+As an example, let's say you've decided to make large changes to your repository's initial commit.
+You used `git rebase -i --root` to rebase your history all the way to the root (initial) commit,
+and used the `edit` commit to make the desired changes on your **master** branch. But you have more
+branches than just **master**, how do you get your changes to the other branches without having to
+redo them in each one?
+
+First, grab the hash of your initial commit on **master**, which reflects the changes you want to apply elsewhere.
+Let's say our hash is `16b845e`.
+
+Then checkout and rebase your target branch.
+```
+git checkout feature-branch
+git rebase -i --root
+```
+
+This opens up the editor with a history similar to this:
+```
+pick cbc85d9 Initial commit
+pick e7ed0b1 Wrote some code
+pick d5377f5 Wrote more code
+```
+
+Now all we have to do to replace the "Initial commit" on **feature-branch** with the one from **master**,
+is to change the hash of it's `pick` command from `cbc85d9` to `16b845e`, like so:
+
+```
+pick 16b845e Initial commit
+pick e7ed0b1 Wrote some code
+pick d5377f5 Wrote more code
+```
+
+_NOTE: You do not need to change the name of the commit that's after the hash._
+
+Git will now use our new "Initial commit" instead of the old one.
