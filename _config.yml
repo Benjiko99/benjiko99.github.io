@@ -12,34 +12,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Site settings
-title: Ben's Blofg
-author: Tomáš Beňo
-email: benjiko99@gmail.com
-description: >- # this means to ignore newlines until the next tag
-  Resources related to Android, Clean Code and Git.
+title: Blofg
 google_analytics: UA-37672995-6
 
-# Social sites
-twitter_username: benjiko99
-github_username: benjiko99
-linkedin_username: benjiko99
-
 # Collections
-collections:
-  refactoring:
-    output: true
-  architecture:
-    output: true
-  git:
-    output: true
-  android:
-    output: true
-  android_studio:
-    output: true
-  clean_code:
-    output: true
-  references:
-    output: true
+#collections:
 
 # Build settings
 markdown: kramdown
